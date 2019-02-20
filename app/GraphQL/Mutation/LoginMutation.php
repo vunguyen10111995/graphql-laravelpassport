@@ -26,9 +26,6 @@ class LoginMutation extends Mutation
     public function args()
     {
         return [
-            'client_id' => env('PASSPORT_CLIENT_ID'),
-            'client_secret' => env('PASSPORT_CLIENT_SECRET'),
-            'grant_type' => 'password',
             'username' => ['name' => 'username', 'type' => Type::nonNull(Type::string())],
             'password' => ['name' => 'password', 'type' => Type::nonNull(Type::string())],
         ];

@@ -35,6 +35,10 @@ class AllUserQuery extends Query
             $users = $users->where('id', $args['id']);
         }
 
+        if (isset($args['email'])) {
+            $users = $users->where('id', $args['email']);
+        }
+
         return $users;
     }
 }

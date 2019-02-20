@@ -1,11 +1,5 @@
 <?php
 
-
-use example\Mutation\ExampleMutation;
-use example\Query\ExampleQuery;
-use example\Type\ExampleRelationType;
-use example\Type\ExampleType;
-
 return [
 
     // The prefix for routes
@@ -100,7 +94,7 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                'currentUser' => \App\GraphQL\Query\AllUserQuery::class,
+
             ],
             'mutation' => [
                 'signIn' => \App\GraphQL\Mutation\LoginMutation::class
